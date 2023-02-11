@@ -3,8 +3,8 @@ import { inject } from 'inversify';
 import { UserService } from '../services/user.service';
 
 const bindings = [
-  Binding.httpTriggerRequest({ name: 'req' as const }), // make string to literal type
-  Binding.httpTriggerResponse({ name: 'res' as const }), // make string to literal type
+  Binding.httpTrigger({ name: 'req' as const }), // make string to literal type
+  Binding.http({ name: 'res' as const }), // make string to literal type
 ];
 
 @functionName('getUser', ...bindings)
