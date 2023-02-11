@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "run-p build:watch start:watch",
+    "serve": "run-s build start",
     "debug": "tsc && npm run start",
     "build": "cross-env nammatham_env=build tsx src/startup.ts && tsc",
-    "build:watch": "nodemon --watch src --ext ts --exec 'npm run build'",
-    "start:watch": "func start --watch",
+    "serve:watch": "nodemon --watch src --ext ts --exec 'npm run serve'",
+    "build:watch": "nodemon --watch src --ext ts --delay 0.5 --exec 'npm run build'",
+    "start:watch": "nodemon --watch dist --delay 0.3 --exec  'npm start'",
     "start": "func start",
-    "dev": "run-s build serve"
+    "dev": "run-s serve:watch"
   },
   "author": "Thada Wangthammang",
   "license": "MIT",
