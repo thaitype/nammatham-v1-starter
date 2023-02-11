@@ -35,3 +35,6 @@ Build
 ```bash
 npm run build
 ```
+
+## Ref
+- Hot Reload Issues: https://github.com/Azure/azure-functions-core-tools/issues/1239#issuecomment-1315565942
