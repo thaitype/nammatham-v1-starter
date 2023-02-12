@@ -18,9 +18,9 @@ export class GetUserFunction extends BaseFunction<typeof bindings> {
     const { req } = this.context.bindings;
     const name = req.query.name;
     if(name === undefined){
-      this.res.send(`Nothing, please using /api/getUser?name=bobby`);
+      this.res?.send(`Nothing, please using /api/getUser?name=bobby`);
     } else {
-      this.res.send(`Get user '${name}' using ${this.userService.getName()} framework`);
+      this.res?.send(`Get user '${name}' using ${this.userService.getName()} framework`);
     }
   }
 }
