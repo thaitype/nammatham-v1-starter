@@ -1,3 +1,9 @@
+# Nammatham/AzureFunctions/GeneratedFiles:start
+getUser
+# Nammatham/AzureFunctions/GeneratedFiles:end
+# Nammatham/AzureFunctions/Cache:start
+.nammatham
+# Nammatham/AzureFunctions/Cache:end
 # Logs
 logs
 *.log
@@ -132,5 +138,3 @@ inversify-express-utils
 
 .idea
 .DS_Store
-get-user
-getUser
