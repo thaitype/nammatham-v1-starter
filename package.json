@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "inversify": "^6.0.1",
-    "nammatham": "^0.9.0",
+    "nammatham": "^1.0.0-beta",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {

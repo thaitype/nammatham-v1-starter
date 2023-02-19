@@ -5,7 +5,7 @@ import { UserService } from '../services/user.service';
 const bindings = [
   Binding.httpTrigger({ name: 'req' as const }), // make string to literal type
   Binding.http({ name: 'res' as const }), // make string to literal type
-];
+] as const;
 
 @functionName('getUser', ...bindings)
 export class GetUserFunction extends BaseFunction<typeof bindings> {
