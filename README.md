@@ -70,7 +70,7 @@ npm run build
 
 ## Documentation
 
-Please read the [full documentation in the repo](docs)
+Please read the [full documentation in the repo](https://github.com/mildronize/nammatham/tree/main/docs)
 
 ## Author
 - Thada Wangthammang, Software Engineer, Thailand
